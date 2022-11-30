@@ -30,7 +30,7 @@ const generateAction = async (req, res) => {
 
   const secondPrompt = 
   `
-  Take the table of contents and title of the lore of the game below and generate the game lore written in with style of GLaDOS from Aperture Science in portal 2. Make it feel like a documental. Don't just list the points. Go deep into each one. Explain why.
+  Take the table of contents and title of the lore of the game below and generate the game lore written in with style of GLaDOS from Aperture Science in portal 2. Make it feel like a history. Don't just list the points. Go deep into each one. Explain why.
 
   Title: ${req.body.userInput}
 
