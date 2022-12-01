@@ -10,7 +10,9 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(135deg, #2192FF, #38E54D, #9CFF2E, #FDFF00, #00FFD1, #31C6D4, #FF1E1E, #FF9551, #FF4A4A);
+    background-size: 500%;
+    animation: Gmation 10s infinite;
     flex-flow: column nowrap;
     gap: 10px;
     height: 100vh;
@@ -87,7 +89,9 @@ body {
     border-top-width: 1px;
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-image: linear-gradient(135deg, #F2DEBA, #FFEFD6, #0E5E6F, #3A8891, #628E90, #B4CDE6);
+    background-size: 500%;
+    animation: Pmation 15s infinite;
     border-radius: 16px;
     display: flex;
     flex: 0 0 auto;
@@ -108,7 +112,7 @@ body {
     letter-spacing: 0px;
     line-height: 1.6em;
     text-align: start;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(0, 0, 0, 0.75);
     text-decoration: none;
     text-transform: none;
 }
@@ -119,7 +123,7 @@ textarea {
 
 
 .prompt-box:focus {
-    border-color:rgba(255, 255, 255, 0.75)
+    border-color:rgba(118, 0, 253, 0.75)
 }
 
 
@@ -172,7 +176,7 @@ textarea {
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(255, 79, 18);
+    background-color: rgb(18, 113, 255);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -282,6 +286,12 @@ textarea {
     width: 100%;
 }
 
+.output:focus{
+    background-image: linear-gradient(135degm #10A19D, #540375, #FF7000, #FFBF00, #E14D2A, #CF0A0A);
+    background-size: 500%;
+    animation: Omation 15s infinite;
+}
+
 .output-header-container {
     place-content: center;
     align-items: center;
@@ -323,7 +333,7 @@ textarea {
 .output-content p {
     text-align: center;
     white-space: pre-line;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(5, 5, 5, 0.5);
 }
 
 @media (min-width: 810px) and (max-width: 1199px) {
@@ -411,5 +421,41 @@ textarea {
 
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes Gmation{
+    0%{
+        background-position: 0%, 50%;
+    }
+    50%{
+        background-position: 50%, 100%;
+    }
+    100%{
+        background-position: 100%, 50%;
+    }
+}
+
+@keyframes Pmation{
+    0%{
+        background-position: 0%, 50%;
+    }
+    50%{
+        background-position: 50%, 100%;
+    }
+    100%{
+        background-position: 100%, 50%;
+    }
+}
+
+@keyframes Omation{
+    0%{
+        background-position: 0%, 50%;
+    }
+    50%{
+        background-position: 50%, 100%;
+    }
+    100%{
+        background-position: 100%, 50%;
     }
 }
