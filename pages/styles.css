@@ -286,11 +286,6 @@ textarea {
     width: 100%;
 }
 
-.output:focus{
-    background-image: linear-gradient(135degm #10A19D, #540375, #FF7000, #FFBF00, #E14D2A, #CF0A0A);
-    background-size: 500%;
-    animation: Omation 15s infinite;
-}
 
 .output-header-container {
     place-content: center;
@@ -448,14 +443,3 @@ textarea {
     }
 }
 
-@keyframes Omation{
-    0%{
-        background-position: 0%, 50%;
-    }
-    50%{
-        background-position: 50%, 100%;
-    }
-    100%{
-        background-position: 100%, 50%;
-    }
-}
