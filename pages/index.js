@@ -43,6 +43,9 @@ const Home = () => {
           <div className="header-subtitle">
             <h2> Input the name of the game, we'll do the rest </h2>
           </div>
+          <div className="Potato">
+            <img src="https://media.giphy.com/media/fWDGc1vqxlrWw/giphy.gif" alt="Im a potato!"></img>
+          </div>
         </div>
         <div className="prompt-container">
           <textarea
@@ -62,7 +65,7 @@ const Home = () => {
             <div className="output">
               <div className="output-header-container">
                 <div className="output-header">
-                  <h3>Output</h3>
+                  <h3>Lore</h3>
                 </div>
               </div>
               <div className="output-content">
